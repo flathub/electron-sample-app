@@ -1,0 +1,29 @@
+{
+  "name": "electrondemo",
+  "version": "1.0.0",
+  "description": "Electron demo app for flatpak tutorial",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Persival/electrondemo.git"
+  },
+  "keywords": [
+    "flatpak",
+    "electron",
+    "demo",
+    "tutorial"
+  ],
+  "author": "Carles Pastor Badosa",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://gitlab.com/Persival/electrondemo/issues"
+  },
+  "homepage": "https://gitlab.com/Persival/electrondemo#README",
+  "dependencies": {
+    "electron": "^1.8.4"
+  }
+}
