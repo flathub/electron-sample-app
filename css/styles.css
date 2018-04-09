@@ -9,6 +9,7 @@ body {
   background-color: #4a90d9;
   font-family: "Source Sans Pro", "Source Sans", sans-serif;
   color: white;
+  user-select: none;
 }
 p {
   margin-left: auto;
