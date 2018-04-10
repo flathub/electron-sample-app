@@ -1,5 +1,5 @@
 {
-  "name": "electrondemo",
+  "name": "electron-sample-app",
   "version": "1.0.0",
   "description": "Electron demo app for flatpak tutorial",
   "main": "main.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/Persival/electrondemo.git"
+    "url": "git+https://github.com/flathub/electron-sample-app.git"
   },
   "keywords": [
     "flatpak",
@@ -20,9 +20,9 @@
   "author": "Carles Pastor Badosa",
   "license": "GPL-3.0+",
   "bugs": {
-    "url": "https://gitlab.com/Persival/electrondemo/issues"
+    "url": "https://github.com/flathub/electron-sample-app/issues"
   },
-  "homepage": "https://gitlab.com/Persival/electrondemo#README",
+  "homepage": "https://github.com/flathub/electron-sample-app",
   "dependencies": {
     "electron": "^1.8.4"
   }
