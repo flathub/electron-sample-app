@@ -1,0 +1,79 @@
+{
+    "app-id": "org.flathub.electron-sample-app",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "1.6",
+    "base": "io.atom.electron.BaseApp",
+    "base-version": "stable",
+    "branch": "stable",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "run.sh",
+    "separate-locales": false,
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=pulseaudio",
+        "--share=network"
+    ],
+    "build-options" : {
+        "cflags": "-O2 -g",
+        "cxxflags": "-O2 -g",
+        "env": {
+            "NPM_CONFIG_LOGLEVEL": "info"
+        }
+    },
+    "modules": [
+        {
+            "name": "nodejs",
+            "cleanup": [
+                "/include",
+                "/share",
+                "/app/lib/node_modules/npm/changelogs",
+                "/app/lib/node_modules/npm/doc",
+                "/app/lib/node_modules/npm/html",
+                "/app/lib/node_modules/npm/man",
+                "/app/lib/node_modules/npm/scripts"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://nodejs.org/dist/v8.11.1/node-v8.11.1.tar.xz",
+                    "sha256": "40a6eb51ea37fafcf0cfb58786b15b99152bec672cccf861c14d1cca0ad4758a"
+                }
+            ]
+        },
+        {
+            "name": "electron-sample-app",
+            "build-options" : {
+                "env": {
+                    /* Need this for electron-download to find the cached electron binary */
+                    "electron_config_cache": "/run/build/electron-sample-app/npm-cache"
+                }
+            },
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/flathub/electron-sample-app/archive/electrondemo-1.0.0.tar.gz",
+                    "sha256": "9ebf9174cd88a5028f33d13afa013a59f511aa0fa93154fa1862d3de1fe32610",
+                    "dest": "main"
+                },
+                "generated-sources.json",
+                /* Wrapper to launch the app */
+                {
+                    "type": "script",
+                    "dest-filename": "run.sh",
+                    "commands": [ "npm start --prefix=/app/main" ]
+                }
+            ],
+            "build-commands": [
+                /* Install npm dependencies */
+                "npm install --prefix=main --offline --cache=/run/build/electron-sample-app/npm-cache/",
+                /* Bundle app and dependencies */
+                "mkdir -p /app/main /app/bin",
+                "cp -ra main/* /app/main/",
+                /* Install app wrapper */
+                "install run.sh /app/bin/"
+            ]
+        }
+    ]
+}
