@@ -2,10 +2,10 @@
     "app-id": "org.flathub.electron-sample-app",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "1.6",
-    "base": "io.atom.electron.BaseApp",
-    "base-version": "stable",
     "branch": "stable",
     "sdk": "org.freedesktop.Sdk",
+    "base": "io.atom.electron.BaseApp",
+    "base-version": "stable",
     "command": "run.sh",
     "separate-locales": false,
     "finish-args": [
@@ -53,8 +53,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flathub/electron-sample-app/archive/electrondemo-1.0.0.tar.gz",
-                    "sha256": "9ebf9174cd88a5028f33d13afa013a59f511aa0fa93154fa1862d3de1fe32610",
+                    "url": "https://github.com/flathub/electron-sample-app/archive/1.0.0.tar.gz",
+                    "sha256": "221582f14afbe9d723ee1b1737800dcce843a776ebfe8edb5c1e7a1d0d36e7f5",
                     "dest": "main"
                 },
                 "generated-sources.json",
