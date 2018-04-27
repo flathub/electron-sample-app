@@ -251,53 +251,53 @@
         "url": "https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha512/d9/fd",
-        "dest-filename": "5cc741b7ae23053835c57ed1790075f2fa81df8699ed6474c337ae87c6d974f60984af8d81de988d12877d3049b0ef67fbe4b5f625f79871eaaad4f17c70",
-        "sha512": "d9fd5cc741b7ae23053835c57ed1790075f2fa81df8699ed6474c337ae87c6d974f60984af8d81de988d12877d3049b0ef67fbe4b5f625f79871eaaad4f17c70",
+        "dest": "npm-cache/_cacache/content-v2/sha512/ad/d6",
+        "dest-filename": "c68a7503461eeb3b46890d771a43952e25183cdb02e4514fd5eb7c2d68c147d38455324779494b32aa068fe48955ab789894993f08f49512c8816cf0cc7a",
+        "sha512": "add6c68a7503461eeb3b46890d771a43952e25183cdb02e4514fd5eb7c2d68c147d38455324779494b32aa068fe48955ab789894993f08f49512c8816cf0cc7a",
         "type": "file",
-        "url": "https://registry.npmjs.org/electron/-/electron-1.8.4.tgz"
+        "url": "https://registry.npmjs.org/electron/-/electron-1.8.6.tgz"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "i386"
         ],
-        "sha256": "04ffd6422cd6a76ace155ea3c95ccb0e0af9b183155797c9360f90005e501c07",
+        "sha256": "344189f71f67070527486ad75b8f2a29f84b9a18fb2db81754328730eb5bc541",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v1.8.4/electron-v1.8.4-linux-ia32.zip"
+        "url": "https://github.com/electron/electron/releases/download/v1.8.6/electron-v1.8.6-linux-ia32.zip"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "x86_64"
         ],
-        "sha256": "71faddc3c3541a03ccd439b3e6db91de44859972a1a656a71c68a5aff1d55a2e",
+        "sha256": "e9b60ef5998f210ba7374a806b38bf9c0cb7999eb85029ce15aedb60c55ba192",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v1.8.4/electron-v1.8.4-linux-x64.zip"
+        "url": "https://github.com/electron/electron/releases/download/v1.8.6/electron-v1.8.6-linux-x64.zip"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "arm"
         ],
-        "sha256": "5adf0d5190d2d41ff57f441edc3e28a83171e1e58460ad16612d375c1a41a3df",
+        "sha256": "89d77131f8361a56f306e800420df6a9e15b97c83f1167227420cc5d07a6428e",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v1.8.4/electron-v1.8.4-linux-arm.zip"
+        "url": "https://github.com/electron/electron/releases/download/v1.8.6/electron-v1.8.6-linux-arm.zip"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "aarch64"
         ],
-        "sha256": "342007f539d8238fd144189dba83d25358bb31431e2eae07979c97730add7d1f",
+        "sha256": "4926980db0f65f736b1e45b30a0242600151c90d8331d63e54b22b39232798ff",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v1.8.4/electron-v1.8.4-linux-arm64.zip"
+        "url": "https://github.com/electron/electron/releases/download/v1.8.6/electron-v1.8.6-linux-arm64.zip"
     },
     {
         "dest": "npm-cache",
-        "dest-filename": "SHASUMS256.txt-1.8.4",
+        "dest-filename": "SHASUMS256.txt-1.8.6",
         "type": "file",
-        "url": "data:04ffd6422cd6a76ace155ea3c95ccb0e0af9b183155797c9360f90005e501c07%20%2Aelectron-v1.8.4-linux-ia32.zip%0A71faddc3c3541a03ccd439b3e6db91de44859972a1a656a71c68a5aff1d55a2e%20%2Aelectron-v1.8.4-linux-x64.zip%0A5adf0d5190d2d41ff57f441edc3e28a83171e1e58460ad16612d375c1a41a3df%20%2Aelectron-v1.8.4-linux-arm.zip%0A342007f539d8238fd144189dba83d25358bb31431e2eae07979c97730add7d1f%20%2Aelectron-v1.8.4-linux-arm64.zip%0A"
+        "url": "data:344189f71f67070527486ad75b8f2a29f84b9a18fb2db81754328730eb5bc541%20%2Aelectron-v1.8.6-linux-ia32.zip%0Ae9b60ef5998f210ba7374a806b38bf9c0cb7999eb85029ce15aedb60c55ba192%20%2Aelectron-v1.8.6-linux-x64.zip%0A89d77131f8361a56f306e800420df6a9e15b97c83f1167227420cc5d07a6428e%20%2Aelectron-v1.8.6-linux-arm.zip%0A4926980db0f65f736b1e45b30a0242600151c90d8331d63e54b22b39232798ff%20%2Aelectron-v1.8.6-linux-arm64.zip%0A"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha1/2c/fd",
