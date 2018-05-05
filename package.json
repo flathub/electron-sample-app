@@ -23,7 +23,7 @@
     "url": "https://github.com/flathub/electron-sample-app/issues"
   },
   "homepage": "https://github.com/flathub/electron-sample-app",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^1.8.4"
   }
 }
