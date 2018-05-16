@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/flathub/electron-sample-app",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^2.0.1"
   }
 }
