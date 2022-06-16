@@ -28,6 +28,18 @@ modules:
         npm_config_cache: /run/build/electron-sample-app/flatpak-node/npm-cache
         npm_config_nodedir: /usr/lib/sdk/node14
         npm_config_offline: 'true'
+    build-commands:
+      # Install npm dependencies
+      - npm install --offline
+      # Build the app; in this example the `dist` script
+      # in package.json runs electron-builder
+      - |
+        . ../flatpak-node/electron-builder-arch-args.sh
+        npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS  --linux --dir
+      # Bundle app and dependencies
+      - cp -a dist/linux*unpacked /app/main
+      # Install app wrapper
+      - install -Dm755 -t /app/bin/ ../run.sh
     subdir: main
     sources:
       #- type: archive
@@ -42,15 +54,3 @@ modules:
         dest-filename: run.sh
         commands:
           - zypak-wrapper.sh /app/main/electron-sample-app "$@"
-    build-commands:
-      # Install npm dependencies
-      - npm install --offline
-      # Build the app; in this example the `dist` script
-      # in package.json runs electron-builder
-      - |
-        . ../flatpak-node/electron-builder-arch-args.sh
-        npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS  --linux --dir
-      # Bundle app and dependencies
-      - cp -a dist/linux*unpacked /app/main
-      # Install app wrapper
-      - install -Dm755 -t /app/bin/ ../run.sh
