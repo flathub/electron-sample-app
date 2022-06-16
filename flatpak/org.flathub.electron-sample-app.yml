@@ -15,8 +15,6 @@ finish-args:
   - --share=network
 build-options:
   append-path: /usr/lib/sdk/node14/bin
-  cflags: -O2 -g
-  cxxflags: -O2 -g
   env:
     NPM_CONFIG_LOGLEVEL: info
 modules:
@@ -26,7 +24,6 @@ modules:
       env:
         XDG_CACHE_HOME: /run/build/electron-sample-app/flatpak-node/cache
         npm_config_cache: /run/build/electron-sample-app/flatpak-node/npm-cache
-        npm_config_nodedir: /usr/lib/sdk/node14
         npm_config_offline: 'true'
     build-commands:
       # Install npm dependencies
